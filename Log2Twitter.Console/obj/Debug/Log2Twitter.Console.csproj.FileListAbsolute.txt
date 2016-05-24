@@ -1,0 +1,14 @@
+D:\Projects\Log2Twitter\Log2Twitter.Console\bin\Debug\Log2Twitter.Console.exe.config
+D:\Projects\Log2Twitter\Log2Twitter.Console\bin\Debug\Log2Twitter.Console.exe
+D:\Projects\Log2Twitter\Log2Twitter.Console\bin\Debug\Log2Twitter.Console.pdb
+D:\Projects\Log2Twitter\Log2Twitter.Console\bin\Debug\Log2Twitter.Connector.dll
+D:\Projects\Log2Twitter\Log2Twitter.Console\bin\Debug\Log2Twitter.dll
+D:\Projects\Log2Twitter\Log2Twitter.Console\bin\Debug\log4net.dll
+D:\Projects\Log2Twitter\Log2Twitter.Console\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Log2Twitter\Log2Twitter.Console\bin\Debug\Log2Twitter.Connector.pdb
+D:\Projects\Log2Twitter\Log2Twitter.Console\bin\Debug\Log2Twitter.pdb
+D:\Projects\Log2Twitter\Log2Twitter.Console\bin\Debug\log4net.xml
+D:\Projects\Log2Twitter\Log2Twitter.Console\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Log2Twitter\Log2Twitter.Console\obj\Debug\Log2Twitter.Console.csprojResolveAssemblyReference.cache
+D:\Projects\Log2Twitter\Log2Twitter.Console\obj\Debug\Log2Twitter.Console.exe
+D:\Projects\Log2Twitter\Log2Twitter.Console\obj\Debug\Log2Twitter.Console.pdb

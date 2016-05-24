@@ -1,0 +1,9 @@
+D:\Projects\Log2Twitter\Log2Twitter\bin\Debug\Log2Twitter.dll
+D:\Projects\Log2Twitter\Log2Twitter\bin\Debug\Log2Twitter.pdb
+D:\Projects\Log2Twitter\Log2Twitter\bin\Debug\log4net.dll
+D:\Projects\Log2Twitter\Log2Twitter\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Log2Twitter\Log2Twitter\bin\Debug\log4net.xml
+D:\Projects\Log2Twitter\Log2Twitter\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Log2Twitter\Log2Twitter\obj\Debug\Log2Twitter.csprojResolveAssemblyReference.cache
+D:\Projects\Log2Twitter\Log2Twitter\obj\Debug\Log2Twitter.dll
+D:\Projects\Log2Twitter\Log2Twitter\obj\Debug\Log2Twitter.pdb
