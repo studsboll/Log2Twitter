@@ -1,6 +1,6 @@
-﻿using System.Reflection;
+﻿using System.Configuration;
+using System.Reflection;
 using log4net;
-using Log2Twitter.Connector;
 using Log2Twitter.Connector.Implementation;
 
 namespace Log2Twitter.Console
@@ -11,12 +11,16 @@ namespace Log2Twitter.Console
 
         static void Main(string[] args)
         {
-            var twitterConnector = new TwitterConnector();
-
+            var client = new TwitterClient(
+                ConfigurationManager.AppSettings["Log2Twitter.ConsumerKey"], 
+                ConfigurationManager.AppSettings["Log2Twitter.ConsumerSecret"],
+                ConfigurationManager.AppSettings["Log2Twitter.ClientToken"],
+                ConfigurationManager.AppSettings["Log2Twitter.ClientSecret"]);
 
             var message = System.Console.ReadLine();
 
-            var r = twitterConnector.PostUpdate(message, "417978678-H0e6oJzXyXzUDCkTgTWohMUQLcWz9oVJG258Zfmu", "Tg9hoqN66rb5IJB0LVVDNFA3cwkopS1eHjXSIOFX0eQWf");
+            var r = client.PostUpdate(message);
+
             System.Console.WriteLine("Response="+r);
         }
     }

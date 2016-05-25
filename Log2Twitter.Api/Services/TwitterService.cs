@@ -8,12 +8,15 @@ namespace Log2Twitter.Api.Services
 {
     public class TwitterService : Service
     {
-        private readonly ITwitterConnector _twitterConnector;
+        private readonly ITwitterOAuthClient _twitterOAuthClient;
         private readonly string _hostUrl;
 
         public TwitterService()
         {
-            _twitterConnector = new TwitterConnector();
+            _twitterOAuthClient = new TwitterOAuthClient(
+                ConfigurationManager.AppSettings["Log2Twitter.ConsumerKey"], 
+                ConfigurationManager.AppSettings["Log2Twitter.ConsumerSecret"]);
+
             _hostUrl = ConfigurationManager.AppSettings["Log2Twitter.Host"] + "oauth";
         }
 
@@ -21,10 +24,10 @@ namespace Log2Twitter.Api.Services
         {
             if (string.IsNullOrEmpty(request.oauth_token) || string.IsNullOrEmpty(request.oauth_verifier))
             {
-                return _twitterConnector.GetRequestToken(_hostUrl);
+                return _twitterOAuthClient.GetRequestToken(_hostUrl);
             }
 
-            return _twitterConnector.GetAccessToken(_hostUrl, request.oauth_token,
+            return _twitterOAuthClient.GetAccessToken(_hostUrl, request.oauth_token,
                 request.oauth_verifier);
         }
     }

@@ -49,9 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Implementation\ConnectorBase.cs" />
-    <Compile Include="Implementation\TwitterConnector.cs" />
-    <Compile Include="ITwitterConnector.cs" />
+    <Compile Include="Implementation\TwitterClient.cs" />
+    <Compile Include="Implementation\TwitterConnectorBase.cs" />
+    <Compile Include="Implementation\TwitterOAuthClient.cs" />
+    <Compile Include="ITwitterClient.cs" />
+    <Compile Include="ITwitterOAuthClient.cs" />
     <Compile Include="Models\ConnectorResponse.cs" />
     <Compile Include="Models\TwitterOAuthResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
