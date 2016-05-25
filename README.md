@@ -20,6 +20,10 @@ The address does not need to be "real", but it needs to look legit. Since it isn
 public, I for instance use a local address (dev.log2twitter.local), and it goes fine as long as you
 set it up with your iis.
 
+So point IIS to Api-path and hit it with /oauth  and servicestack should help you with rest. If
+callbackUrl is ok, you should get a success response with a redirectlink, click it and authorize
+the app, then you get back and will see your client-keys.
+
 ## Other
 Console-App is for testing to post.
 
